@@ -1,0 +1,189 @@
+\documentclass[msc]{style/SBU-Thesis}
+
+\setlength{\headheight}{16.65233pt}
+\addtolength{\topmargin}{-4.65233pt}
+
+\begin{document}
+
+
+% عنوان پایان‌نامه
+\title{
+تحلیل شبکه های مغز از روش تداوم همولوژی
+}
+
+% رشته
+\subject{فیزیک }
+
+% گرایش
+\field{فیزیک آماری و سامانه‌های پیچیده }
+
+% نام
+\name{محدثه}
+
+% نام خانوادگی
+\surname{مظفری}
+
+% استاد راهنما
+\firstsupervisor{ دکتر غلامرضا جعفری }
+
+% استاد راهنمای دوم (در صورت وجود، در غیر این صورت این خط را حذف کنید)
+\secondsupervisor{دکتر سید علی حسینی اسفیدواجانی  }
+
+%اسامی برای صفحات داوران: در هر مورد، در صورت عدم وجود، کل خط را حذف کنید
+\davaranSupervisor{نام و نام‌خانوادگی}
+\davaranSecondSupervisor{نام و نام‌خانوادگی}
+\davaranAdvisor{نام و نام‌خانوادگی}
+\davaranInternal{نام و نام‌خانوادگی}
+\davaranExternal{نام و نام‌خانوادگی}
+\davaranAssignee{نام و نام‌خانوادگی}
+%	\davaranDate{۱۳۹۷/۱۱/۷} % چنانچه این خط را حذف کنید با فضای خالی جایگزین می‌شود
+
+% تاریخ انجام پایان‌نامه
+\thesisdate{دی ۱۴۰۳}
+
+% نام دانشکده
+\faculty{دانشکده فیزیک}
+
+% نام دانشگاه
+\university{دانشگاه شهید بهشتی}
+
+% مقادیر انگلیسی برای صفحه آخر
+\latinuniversity{Shahid Beheshti University}
+\latinfaculty{Faculty of Physics}
+\latintitle{Brain Networks Analysis Using Persistent Homology Technique}
+\latinname{Mohaddeseh}
+\latinsurname{Mozaffari}
+\latinthesisdate{2025}
+\firstlatinsupervisor{Dr. G. Reza Jafari}
+\secondlatinsupervisor{Dr. S. Ali Hosseiny Esfidvajani}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% چکیده به فارسی
+\fa-abstract{
+این یک چکیده نمونه است که برای توصیف کلی پایان‌نامه استفاده می‌شود.
+}
+
+% کلمات کلیدی:
+\keywords{
+فیزیک، شبکه‌های پیچیده، توپولوژی پایدار
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ساخت صفحه اول پایان‌نامه
+\firstPage 
+% ساخت صفحه امضا داوران
+\davaranPage 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%ساخت صفحه تقدیر و تشکر
+{
+	\newpage
+	\thispagestyle{plain}
+	\noindent
+	\large{\textbf{با سپاس و قدردانی از}}
+	
+	\noindent
+	پدران و مادرانی که خود را فدای تربیت فرزاندان خود کردند و\\
+	اساتید و معلمانی که در تمام دوران زندگی، راهنمای جانسوز ما بودند.
+	
+	
+	\vspace{14cm}	
+	آوردن این صفحه اختیاریست.
+	
+	\pagebreak
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\rightsPage % ساخت صفحه حقوق پایان‌نامه
+\copyRightPage % ساخت صفحه تعهدنامه
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%ساخت صفحه تقدیم به 
+{
+	\newpage
+	\thispagestyle{plain}
+	\large{\textbf{تقدیم به}}
+	
+	\begin{center}
+		رهجويان علم و فناوری و دوست‌داران علم و دانش
+	\end{center}
+	
+	\vspace{14cm}	
+	آوردن این صفحه اختیاریست.
+	
+	\pagebreak
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% پیشگفتار
+\pish{
+پیشگفتار نمونه‌ای که می‌توانید برای پروژه خود تنظیم کنید.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% صفحه چکیده فارسی
+\abstractPage
+
+% فهرست مطالب
+\tableofcontents 
+
+% فهرست تصاویر
+\listoffigures \newpage 
+
+% فهرست جداول
+\listoftables \newpage 
+
+% صفحه پیشگفتار
+\prefacePage
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% فصل‌های اصلی
+{\baselineskip=1cm
+\include{chapters/c1_moghadame}}
+\let\cleardoublepage\clearpage
+{\baselineskip=1cm
+\include{chapters/c2_backgrounds}}
+\let\cleardoublepage\clearpage
+{\baselineskip=1cm
+\include{chapters/c3_methods}}
+\let\cleardoublepage\clearpage
+{\baselineskip=1cm
+\include{chapters/c4_results}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% پیوست‌ها
+\appendix
+
+{\baselineskip=1cm
+\include{appendix/a1_appendix}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% مراجع
+\newpage
+\renewcommand{\bibname}{مراجع}
+\bibliographystyle{ieeetr-fa}
+\bibliography{library}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% چکیده به انگلیسی
+\en-abstract
+{
+This is an example abstract for the thesis, briefly describing the research focus and findings.
+}
+
+% کلمات کلیدی انگلیسی 
+\latinkeywords
+{
+    Physics, Complex Networks, Persistent Homology
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% صفحه چکیده به انگلیسی
+\latinAbstractPage 
+
+% صفحه عنوان انگلیسی
+\latinFirstPage 
+
+\end{document}
