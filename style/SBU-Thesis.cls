@@ -525,16 +525,6 @@
 }
 
 
-% تنظیمات مربوط به شماره‌گذاری و هدر
-% -------------------------
-\pagenumbering{Alph}
-\let\ol@chapter\@chapter
-\def\@chapter{%
-	\ifnum\c@chapter=0 \pagenumbering{arabic}\setcounter{page}{1}\fi
-	\ol@chapter}
-
-% -------------------------
-
 \def\version{نسخه‌ی }
 \def\report{گزارش}
 \def\onvan{عنوان}

@@ -4,7 +4,7 @@
 \addtolength{\topmargin}{-4.65233pt}
 
 \begin{document}
-
+\pagenumbering{Alph}
 
 % عنوان پایان‌نامه
 \title{
@@ -139,6 +139,7 @@
 		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % فصل‌های اصلی
+\pagenumbering{arabic}\setcounter{page}{1}
 {\baselineskip=1cm
 \include{chapters/c1_moghadame}}
 \let\cleardoublepage\clearpage
@@ -150,14 +151,15 @@
 \let\cleardoublepage\clearpage
 {\baselineskip=1cm
 \include{chapters/c4_results}}
+\let\cleardoublepage\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % پیوست‌ها
 \appendix
+\addcontentsline{toc}{part}{پیوست‌ها}
 
-{\baselineskip=1cm
 \include{appendix/a1_appendix}
-}
+\cleardoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % مراجع
@@ -165,6 +167,7 @@
 \renewcommand{\bibname}{مراجع}
 \bibliographystyle{ieeetr-fa}
 \bibliography{library}
+\bibdata{library}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % چکیده به انگلیسی

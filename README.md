@@ -19,7 +19,7 @@ This repository provides a LaTeX template for writing theses at Shahid Beheshti 
 
 2. **Install required fonts**:
 
-   Ensure that IRNazanin and IRTitr fonts are installed on your system. These fonts are included in the `fonts` directory of this repository.
+   Ensure that XB Zar fonts are installed on your system. These fonts are included in the `fonts` directory of this repository.
 
 3. **Compile the thesis**:
 
@@ -52,7 +52,7 @@ This template is based on the work of [Arash Dargahi Nobari](https://github.com/
 
 ۲. **نصب فونت‌های مورد نیاز**:
 
-   اطمینان حاصل کنید که فونت‌های IRNazanin و IRTitr روی سیستم شما نصب شده‌اند. این فونت‌ها در پوشه `fonts` این مخزن موجود هستند.
+   اطمینان حاصل کنید که فونت‌های XB Zar روی سیستم شما نصب شده‌اند. این فونت‌ها در پوشه `fonts` این مخزن موجود هستند.
 
 ۳. **کامپایل پایان‌نامه**:
 
